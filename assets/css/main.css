@@ -1,0 +1,240 @@
+.inner{
+    max-width: 1360px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+
+/* 텍스트처리 */
+.module-text{}
+.module-text .title{
+    display: block;
+    flex: 1;
+    font-size: 50px;
+    font-family: RobotoCondensed_Bold;
+    letter-spacing: -1.2px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.module-text .desc{
+    display: block;
+    flex: 1;
+    font-size: 22px;
+    letter-spacing: -1.2px;
+    line-height: 1.6;
+}
+
+
+.frame{padding: 100px 0;}
+
+section .flex{display: flex;}
+
+.logo-symbol img{
+    width: 100%;
+}
+
+
+.sc-logo .logo_conter{
+    display: flex;
+}
+
+
+.title-area h2{
+    display: block;
+    flex: 1;
+    font-size: 50px;
+    font-family: RobotoCondensed_Bold;
+    letter-spacing: -1.2px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.text-area {
+    display: block;
+    flex: 1;
+    font-size: 22px;
+    letter-spacing: -1.2px;
+    line-height: 1.6;
+}
+
+
+.sc-logo .title-area p{
+    width: 50%;
+    font-size: 22px;
+    letter-spacing: -1.2px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.bg_conter {
+    width: 100%;
+    background: #F7F7F9;
+    padding: 100px 0;
+}
+.logo-area{
+    display: grid;
+    gap: 10px;
+    margin-left: 20px;
+}
+.sc-logo .logo-inner{
+    display: flex;
+    width: 1260px;
+    min-width: 1260px;
+    justify-content: space-between;
+}
+
+.sc-logo .margin {
+    margin-bottom: 30px !important;
+}
+.sc-logo .area {
+    margin: 100px auto 0;
+}
+
+
+.sc-channel {
+  
+}
+  
+  .sc-channel .inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sc-channel .inner > * {
+
+  }
+
+  .sc-definition{padding-bottom: 100px;}
+  .sc-definition img{width: 100%;}
+  .sc-definition .module-text{text-align: center;}
+  .sc-playnext img{width: 100%;}
+
+
+  .sc-logo{}
+  /* .sc-logo img{width: 100%;} */
+
+.brandimg img{
+    width: 100%;
+}
+.core-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.core-text .sub-title {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.core-text .main-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.sc-core {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/rebranding06.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden; /* 내용 삐져나오는 거 방지 */
+    padding: 100px 0;
+}
+
+.sc-core .inner3,
+.sc-core .bg-mobile {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.sc-core .inner3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sc-core .inner3 img {
+    width: 30%; 
+    max-width: 380px;
+    height: auto;
+}
+
+.sc-core .bg-mobile {
+    display: none; /* 기본은 숨김 */
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sc-core .bg-mobile img {
+    width: 80%;
+    height: auto;
+}
+
+.moblie_content{
+    display: none;
+}
+
+.sc-core .img-wrapper {
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 12px; 
+  }
+  
+  .sc-core .img-wrapper img {
+    transition: transform 0.5s ease;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .sc-core .img-wrapper:hover img {
+    transform: scale(1.1);
+  }
+
+  /* css */
+
+
+  @media (max-width:1200px) {
+    section .flex{flex-direction: column;}
+    .module-text .title{font-size: 30px;}
+    .module-text .desc{font-size: 14px;}
+    .sc-channel .inner {display: block;}
+    .sc-logo .logo_conter { display: block;}
+    .sc-logo .logo-area {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .sc-core .inner3 {
+        display: none;
+    }
+    .sc-core .bg-mobile {
+        display: flex;
+    }
+    .sc-logo .margin {
+        margin-bottom: 20px !important;
+    }
+    .pc_content{
+        display: none;
+    }
+    .moblie_content{
+        display: block;
+    }
+    .brandimg{
+        margin-bottom: 20px;
+    }
+    .sc-core .img-wrapper img {
+        width: 80%;
+    }
+    .sc-core .img-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  }

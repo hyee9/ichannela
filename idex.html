@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <div class="group-inner">
+            <div class="until-left">
+                <h1>
+                    <a href="" class="logo">
+                        <img src="./assets/images/logo_rebrand.png" alt="">
+                    </a>
+                </h1>
+                <nav class="nav-group">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="" class="title">About 채널A </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="title">취재가 시작되자</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="title">온에어</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="title">뉴스</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="title">방송</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="title">모아보기</a>
+                        </li>
+                        </ul>
+                </nav>
+            </div>
+            <div class="util-right">
+                <ul class="util-list">
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">편성표</a></li>
+                    <li><a href="">이용권</a></li>
+                    <li><a href="" alt="검색" class="icon"></a></li>
+                </ul>
+                <a href="#" class="btn-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="gnbarea_mobile">
+            <div class="mobile-menu-inner">
+            <div class="m_header">
+              <div class="m_logo">
+                <a class="m_logo_link">
+                  <img src="" alt="">
+                </a>
+              </div>
+              <a class="btn_sidemenu_close">모바일 메뉴 닫기</a>
+            </div>
+        
+            <div class="m_utilmenu">
+              <div class="top_menu">
+                <ul>
+                  <li><a class="login-btn">로그인</a></li>
+                  <li><a class="signup-btn">회원가입</a></li>
+                </ul>
+              </div>
+        
+              <div class="m_search">
+                <div class="search_outline">
+                  <input type="text" name="msearch" id="msearch" placeholder="검색어를 입력하세요">
+                  <button class="search-btn">
+                    <img src="http://image.ichannela.com/images/common/icon_search_mobile_1.png" alt="검색아이콘">
+                  </button>
+                </div>
+              </div>
+            </div>
+        
+            <div class="m_quick">
+              <ul>
+                <li>
+                  <a class="quick-onair">
+                    <span class="icon"><img src="http://image.ichannela.com/images/common/icon_sidemenu_onair_b.png" alt="온에어"></span>
+                    <span class="txt">온에어</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="quick-schedule">
+                    <span class="icon"><img src="http://image.ichannela.com/images/common/icon_sidemenu_protable_b.png" alt="편성표"></span>
+                    <span class="txt">편성표</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="quick-ticket">
+                    <span class="icon"><img src="http://image.ichannela.com/images/common/icon_sidemenu_usecupon_b.png" alt="이용권"></span>
+                    <span class="txt">이용권</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        
+            <ul class="gnb_mobile">
+              <li>
+                <div class="title">채널A 뉴스 <span class="cert"></span></div>
+                <div class="submenu">
+                  <ul>
+                    <li><a class="news-home">뉴스홈</a></li>
+                    <li><a class="news-reporter">기자별뉴스</a></li>
+                    <li><a class="news-tv">TV뉴스</a></li>
+                    <li><a class="news-digital">디지털뉴스</a></li>
+                  </ul>
+                </div>
+              </li>
+        
+              <li>
+                <div class="title">방송 프로그램 <span class="cert"></span></div>
+                <div class="submenu">
+                  <ul>
+                    <li><a class="program-home">방송홈</a></li>
+                    <li><a class="program-entertainment">예능</a></li>
+                    <li><a class="program-education">교양</a></li>
+                    <li><a class="program-drama">드라마</a></li>
+                    <li><a class="program-special">스페셜</a></li>
+                    <li><a class="program-all">프로그램 둘러보기</a></li>
+                  </ul>
+                </div>
+              </li>
+        
+              <li>
+                <div class="title">모아보기 <span class="cert"></span></div>
+                <div class="submenu">
+                  <ul>
+                    <li><a class="collection-home">모아보기 홈</a></li>
+                    <li><a class="collection-popular">인기</a></li>
+                    <li><a class="collection-latest">최신</a></li>
+                    <li><a class="collection-program">프로그램별</a></li>
+                  </ul>
+                </div>
+              </li>
+        
+              <li>
+                <div class="title">시청자 센터 <span class="cert"></span></div>
+                <div class="submenu">
+                  <ul>
+                    <li><a class="viewer-committee">시청자위원회 평가단</a></li>
+                    <li><a class="viewer-consult">시청자 상담실 상담내역</a></li>
+                    <li><a class="viewer-grievance">고충처리인</a></li>
+                    <li><a class="viewer-help">도움말</a></li>
+                    <li><a class="viewer-committee-info">시청자 위원회란?</a></li>
+                    <li><a class="viewer-meeting">회의록</a></li>
+                    <li><a class="viewer-report">운영보고</a></li>
+                    <li><a class="illegal-report">불법촬영물 신고 안내</a></li>
+                    <li><a class="disabled-service">장애인 서비스 이용 안내</a></li>
+                  </ul>
+                </div>
+              </li>
+        
+              <li>
+                <div class="title">이벤트 <span class="cert"></span></div>
+                <div class="submenu">
+                  <ul>
+                    <li><a class="event-all">전체</a></li>
+                    <li><a class="event-doing">진행중</a></li>
+                    <li><a class="event-end">종료</a></li>
+                    <li><a class="event-winner">당첨자 공지</a></li>
+                  </ul>
+                </div>
+              </li>
+        
+              <li>
+                <div class="title">채널A 소개 <span class="cert"></span></div>
+                <div class="submenu">
+                  <ul>
+                    <li><a class="intro-vision">개요 및 비전</a></li>
+                    <li><a class="intro-message">경영진 인사말</a></li>
+                    <li><a class="intro-history">연혁</a></li>
+                    <li><a class="intro-disclosure">경영공시</a></li>
+                    <li><a class="intro-organization">조직현황</a></li>
+                    <li><a class="intro-ci">CI</a></li>
+                    <li><a class="intro-press">보도자료</a></li>
+                  </ul>
+                </div>
+              </li>
+        
+              <li>
+                <div class="title">광고·큐톤·협찬 <span class="cert"></span></div>
+                <div class="submenu">
+                  <ul>
+                    <li><a class="ad-alliance">광고 및 제휴</a></li>
+                    <li><a class="ad-cuetone">큐톤 안내</a></li>
+                    <li><a class="ad-sponsor">협찬고지</a></li>
+                  </ul>
+                </div>
+              </li>
+        
+              <li>
+                <div class="title">영상자료판매 <span class="cert"></span></div>
+                <div class="submenu">
+                  <ul>
+                    <li><a class="video-sale">영상자료판매</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+    </nav>
+    <main>
+        <section class="sc-video">
+            <div class="video">
+                <video playsinline="" preload="auto" autoplay="autoplay" loop="loop" muted="muted" volume="0" style="margin: 0; width: 100%; height: auto;">
+                    <source type="video/mp4" src="./assets/video/content.mp4">
+                </video>
+            </div>
+        </section>
+        <section class="sc-banner frame">
+            <div class="inner">
+                <div class="flex module-text">
+                    <div class="title">
+                        <p>Channel A
+                            <br>
+                            Rebranding Project
+                        </p>
+                    </div>
+                    <div class="desc">
+                        <p>
+                            Channel A는 2011년 개국 이후 ‘캔버스’를 중심으로 시청자와
+                            <br>
+                            지속적으로 소통해왔습니다.
+                            <br>
+                            <br>
+                            이제 Channel A는 변화된 미디어 환경에 맞춰, 새로운 브랜드
+                            <br>
+                            아이덴티티를 통해 시청자 관점에서 소통하려 합니다.	
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-channel" data-trigger>
+            <div class="inner">
+                <div class="as-is" data-motion="item">
+                    <img src="./assets/images/img_rebranding01.png" alt="">
+                </div>
+                <div class="to-be" data-motion="item">
+                    <img src="./assets/images/img_rebranding02.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-brandtitle frame">
+            <div class="inner">
+                <div class="module-text">
+                    <div class="title">Brand Definition</div>
+                    <div class="text-area">
+                        <p class="desc">
+                            방송산업이 다각화되고 시청 방식이 빠르게 바뀌면서, 콘텐츠 기획과 제작이
+                            <br>
+                            공급자 관점을 넘어서 시청자 관심사 중심으로 재편되고 있습니다.
+                            <br>
+                            <br>
+                            이제 채널은 콘텐츠를 유통하는 수단이 아니라, 나를 표현하는 수단입니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-definition" >
+            <picture>
+                <source srcset="./assets/images/img_rebranding05.png" media="(min-width: 1200px)">
+                <img src="https://image.ichannela.com/images/common/img_rebranding05m_n01.png" alt="">
+            </picture>
+
+
+            <div class="content">
+                <div class="inner" data-trigger>
+                    <div class="module-text">
+                        <h2 class="title" data-motion="item">
+                            Content Play& Create Platform
+                        </h2>
+                        <p class="desc" data-motion="item">
+                            Channel A는 콘텐츠를 끊임없이 제작하고 즐길 수 있는 콘텐츠 탐험공간,
+                            <br>
+                            즉 'Content Play & Create Platform'으로서 시청자와 커뮤니케이션합니다.
+                            <br>
+                            이를 통해 Channel A는 일상 속 개인의 취향과 가치관,
+                            <br>
+                            라이프 스타일을 대변하는 플랫폼으로 거듭납니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+        <section class="sc-core" data-trigger>
+            <div class="inner3" data-motion="item">
+                <div class="img-wrapper"><img src="./assets/images/rebranding_thum01_n01.png" alt="" class="item"></div>
+                <div class="img-wrapper"><img src="./assets/images/rebranding_thum02_n01.png" alt="" class=""></div>
+                <div class="img-wrapper"><img src="./assets/images/rebranding_thum03_n01.png" alt="" class=""></div>
+            </div>
+            <div class="bg-mobile"  data-motion="item" >
+                <div class="img-wrapper"><img src="./assets/images/rebranding_thum01m_n01 (1).png" alt="" class="item"></div>
+                <div class="img-wrapper"><img src="./assets/images/rebranding_thum02m_n01 (1).png" alt="" class=""></div>
+                <div class="img-wrapper"><img src="./assets/images/rebranding_thum03m_n01 (1).png" alt="" class=""></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-slogan ">
+            <div class="inner">
+
+                <div class="frame">
+                    <div class="flex module-text">
+                        <div class="title">
+                            <h2>Channel A
+                                <br>
+                                Brand Slogan
+                            </h2>
+                        </div>
+                        <div class="desc">
+                            <p>
+                                Channel A의 슬로건은 '즐거움'이라는 시청 보상을 강조하여
+                            <br>
+                            Channel A 콘텐츠에 대한 기대감을 직관적으로 전달합니다.
+                            <br>
+                            <br>
+                            또 담대한 표현을 통해 시선을 끌고, 젊고 역동적인 브랜드
+                            <br>
+                            이미지를 전달합니다. 내부 구성원에게는 새로운 콘텐츠 영역을
+                            <br>
+                            개척해나가는 목표를 제시합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+              
+            </div>
+            <div class="inner frame">
+                <img src="./assets/images/img_rebranding07_n01.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="sc-playnext">
+            <img src="./assets/images/img_rebranding08.jpg" alt="">
+        </section>
+        <section class="sc-logo">
+
+            <div class="inner">
+                <div class="module-text frame">
+                    <h2 class="title">Brand Logo</h2>
+                    <div class="flex">
+                        <div class="desc">
+                            <p>
+                                Channel A의 심벌은 하나의 선이 이어지는 형태로,
+                                <br>
+                                끝없이 이어지는 콘텐츠로 무한한 상상과 차원이 다른 즐거움을
+                                <br>
+                                제공하는 Channel A의 브랜드 가치를 반영하고 있습니다.
+                            </p>
+                        </div>
+                        <div class="desc">
+                            <p>
+                                또한 X, Y 축으로 이루어진 기존의 수직적 로고의 형상에서 벗어나,
+                                <br>
+                                우상단을 향해 가는 Z 축을 활용해 디자인된 Channel A의 로고는
+                                <br>
+                                평면적 관점과 사고를 넘어, 입체적 관점을 통해 세상을 바라보아,
+                                <br>
+                                더 넓은 세상으로 도약하고자 하는 Channel A의 진취성을 표현합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-group bg_conter">
+                <div class="inner logo_conter">
+                    <img src="./assets/images/img_rebranding09_m01.png" alt="메인 이미지">
+                    <div class="logo-area">
+                        <img src="./assets/images/img_rebranding09_m02.png" alt="서브 이미지 1">
+                        <img src="./assets/images/img_rebranding09_m03.png" alt="서브 이미지 2">
+                    </div>
+                </div>
+                <div class="inner">
+                    <img src="./assets/images/img_rebranding09_01.png" alt="" style="margin-top: 20px;">
+                </div>
+            </div>
+            <div class="logo-symbol">
+                <img src="./assets/images/img_rebranding10.jpg" alt="" class="pc_content">
+                <img src="./assets/images/img_rebranding10m_n01 (1).jpg" alt="" class="moblie_content">
+            </div>
+            <div class="logo-color frame">
+                <div class="inner">
+                    <div class="title-area">
+                        <h2>color System</h2>
+                    </div>
+                    <div class="module-text" style="margin-bottom: 12px;">
+                        <p class="desc">
+                            Channel A의 메인 컬러인 'Channel A 블루'는 신뢰와 청렴을 바탕으로 견고히 쌓아온 핵심 자산입니다.
+                            <br>
+                            이와 함께 활용할 수 있는 서브 컬러는 Channel A의 다채로운 콘텐츠를 무드별로, 직관적으로 전달합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="inner">
+                    <img src="./assets/images/img_rebranding11.png" alt="" class="margin">
+                    <img src="./assets/images/img_rebranding11_1.png" alt="" class="pc_content">
+                    <img src="./assets/images/img_rebranding11_1m.png" alt="" class="moblie_content">
+                </div>
+            </div>
+            <div class="brandimg">
+                <img src="./assets/images/img_rebranding12.jpg" alt="">
+                <img src="./assets/images/img_rebranding13.jpg" alt="" class="area pc_content">
+                <img src="./assets/images/img_rebranding13m.jpg" alt="" class="moblie_content">
+                <img src="./assets/images/img_rebranding14.jpg" alt="" class="area pc_content">
+                <img src="./assets/images/img_rebranding15_n01.jpg" alt="" class="pc_content">
+                <img src="./assets/images/img_rebranding14m.jpg" alt="" class="moblie_content">
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="link-content">
+            <div class="link">
+                <div class="area-left">
+                    <span class="title">공지사항</span>
+                    <span class="text">시청자위원 공모 결과</span>
+                </div>
+                <div class="area-right">
+                    <div class="link-group">
+                        <a href="#" class="tab-button">
+                            관련사이트 바로가기
+                            <span class="cert"></span>
+                        </a>
+                        <div class="linkbox">
+                            <div class="group-board" >
+                                <ul class="group-list">
+                                    <li class="group-item"><a href="">동아미디어그룹</a></li>
+                                    <li class="group-item"><a href="">동아닷컴</a></li>
+                                    <li class="group-item"><a href="">스포츠동아</a></li>
+                                    <li class="group-item"><a href="">동아사이언스</a></li>
+                                    <li class="group-item"><a href="">채널A 미디어텍</a></li>
+                                    <li class="group-item"><a href="">채널A 플러스</a></li>
+                                    <li class="group-item"><a href="">오티티닷컴</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link-group">
+                        <a href="#" class="tab-button">
+                            관련사 바로가기 
+                            <span class="cert"></span>
+                        </a>
+                        <div class="linkbox">
+                            <div class="group-board2" >
+                                <ul class="group-list">
+                                    <li class="group-item"><a href="">ht동아일보</a></li>
+                                    <li class="group-item"><a href="">int동아닷컴</a></li>
+                                    <li class="group-item"><a href="">h동아사이언스</a></li>
+                                    <li class="group-item"><a href="">동아B&amp;M</a></li>
+                                    <li class="group-item"><a href="">a디유넷</a></li>
+                                    <li class="group-item"><a href="">hr스포츠동아</a></li>
+                                    <li class="group-item"><a href="">동아E&amp;D</a></li>
+                                    <li class="group-item"><a href="">동아이지에듀</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notice">
+            <div class="logo">
+                <img src="./assets/images/footer_logoimg.png" alt="" style="width: 50%;">
+            </div>
+            <div class="notice-area">
+                <div class="menu">
+                    <h3>채널A</h3>
+                    <a href="">채널A 소개</a>
+                    <a href="">채널A 홍보</a>
+                </div>
+                <div class="menu">
+                    <h3>광고·큐톤·협찬</h3>
+                    <a href=""> 광고 및 제휴</a>
+                    <a href="">큐톤 안내</a>
+                    <a href="">협찬 고지</a>
+                </div>
+                <div class="menu">
+                    <h3>약관정책</h3>
+                    <a href="">이용약관</a>
+                    <a href="">개인정보취급방침</a>
+                    <a href="">청소년보호정책</a>
+                </div>
+                <div class="menu">
+                    <h3>시청자센터</h3>
+                    <a href="">시청자위원회 평가단</a>
+                    <a href="">시청자 상담실 상담내역</a>
+                    <a href="">고충처리인</a>
+                    <a href="">이벤트</a>
+                    <a href="">도움말</a>
+                    <a href="">불법촬영물 유통 신고 안내</a>
+                    <a href="">장애인 서비스 이용 안내</a>
+                </div>
+                <div class="menu">
+                    <h3>법적고지</h3>
+                    <a href="">영상자료 판매</a>
+                    <a href="">기획안 공모</a>
+                </div>
+            </div>
+        </div>
+        <div class="address">
+            <small>COPYRIGHT(c) SINCE 2024 CHANNEL A, ALL RIGHTS RESERVED.</small>
+            <div class="content">
+                <p>사업자등록번호: 101-86-62787<span> | </span>부가통신사업신고: 022357호 </p>
+            </div>
+            <div class="content">
+                <p>통신판매업신고: 제2012-서울종로-0195호
+                <span> | </span> 
+                (주)채널에이 대표이사: 김차수
+                <span> | </span>
+                대표전화: (02)2020-3114</p>
+            </div>
+            <address class="content">
+                <p>청소년보호책임자 : 이샘물 
+                <span> | </span>
+                주소: 서울특별시 종로구 청계천로 1 (03187) 
+                <span> | </span>
+                시청자상담실: (02)2020-3100</p>
+            </address>
+        </div>
+</footer>
+</body>
+</html>
+
+
